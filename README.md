@@ -1,430 +1,446 @@
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/nir-diamant-759323134/)
-[![Twitter](https://img.shields.io/twitter/follow/NirDiamantAI?label=Follow%20@NirDiamantAI&style=social)](https://twitter.com/NirDiamantAI)
-[![Discord](https://img.shields.io/badge/Discord-Join%20our%20community-7289da?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/cA6Aa4uyDX)
-
-
-> 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://github.com/sponsors/NirDiamant)** to help maintain and expand this valuable resource!
-
-
-# Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
-
-Welcome to one of the most comprehensive and dynamic collections of Retrieval-Augmented Generation (RAG) tutorials available today. This repository serves as a hub for cutting-edge techniques aimed at enhancing the accuracy, efficiency, and contextual richness of RAG systems.
-
-## 📫 Stay Updated!
-
-Don't miss out on cutting-edge developments, new tutorials, and community insights!
-
-**[Subscribe to the RAG Techniques Newsletter of DiamantAI](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)**
-
-## Introduction
-
-Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses.
-
-Our goal is to provide a valuable resource for researchers and practitioners looking to push the boundaries of what's possible with RAG. By fostering a collaborative environment, we aim to accelerate innovation in this exciting field.
-
-## Related Projects
-
-🖋️ Check out my  **[Prompt Engineering Techniques guide](https://github.com/NirDiamant/Prompt_Engineering)** for a comprehensive collection of prompting strategies, from basic concepts to advanced techniques, enhancing your ability to interact effectively with AI language models.
-
-🤖 Explore my **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)** to discover a variety of AI agent implementations and tutorials, showcasing how different AI technologies can be combined to create powerful, interactive systems.
-
-## A Community-Driven Knowledge Hub
-
-**This repository grows stronger with your contributions!** Join our vibrant Discord community — the central hub for shaping and advancing this project together 🤝
-
-**[RAG Techniques Discord Community](https://discord.gg/cA6Aa4uyDX)**
-
-Whether you're an expert or just starting out, your insights can shape the future of RAG. Join us to propose ideas, get feedback, and collaborate on innovative techniques. For contribution guidelines, please refer to our **[CONTRIBUTING.md](https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md)** file. Let's advance RAG technology together!
-
-🔗 For discussions on GenAI, RAG, or custom agents, or to explore knowledge-sharing opportunities, feel free to **[connect on LinkedIn](https://www.linkedin.com/in/nir-diamant-759323134/)**.
-
-## Key Features
-
-- 🧠 State-of-the-art RAG enhancements
-- 📚 Comprehensive documentation for each technique
-- 🛠️ Practical implementation guidelines
-- 🌟 Regular updates with the latest advancements
-
-## Advanced Techniques
-
-Explore the extensive list of cutting-edge RAG techniques:
-
-### 🌱 Foundational RAG Techniques
-
-1. Simple RAG 🌱
-   - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb)**
-   - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb)**
-   - **[Runnable Script](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/simple_rag.py)**
-
-   #### Overview 🔎
-   Introducing basic RAG techniques ideal for newcomers.
-
-   #### Implementation 🛠️
-   Start with basic retrieval queries and integrate incremental learning mechanisms.
-
-2. Simple RAG using a CSV file 🧩
-   - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb)**
-   - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb)**
-   
-    #### Overview 🔎
-    Introducing basic RAG using CSV files.
-
-    #### Implementation 🛠️
-    This uses CSV files to create basic retrieval and integrates with openai to create question and answering system.
-
-3. **[Reliable RAG 🏷️](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb)**
-
-   #### Overview 🔎
-   Enhances the Simple RAG by adding validation and refinement to ensure the accuracy and relevance of retrieved information.
-
-   #### Implementation 🛠️
-   Check for retrieved document relevancy and highlight the segment of docs used for answering.
-
-4. Choose Chunk Size 📏  
-   - **[LangChain](all_rag_techniques/choose_chunk_size.ipynb)**  
-   - **[Runnable Script](all_rag_techniques_runnable_scripts/choose_chunk_size.py)**
-
-   #### Overview 🔎
-   Selecting an appropriate fixed size for text chunks to balance context preservation and retrieval efficiency.
-
-   #### Implementation 🛠️
-   Experiment with different chunk sizes to find the optimal balance between preserving context and maintaining retrieval speed for your specific use case.
-
-5. **[Proposition Chunking ⛓️‍💥](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/proposition_chunking.ipynb)**
-
-   #### Overview 🔎
-   Breaking down the text into concise, complete, meaningful sentences allowing for better control and handling of specific queries (especially extracting knowledge).
-
-   #### Implementation 🛠️
-   - 💪 **Proposition Generation:** The LLM is used in conjunction with a custom prompt to generate factual statements from the document chunks.
-   - ✅ **Quality Checking:** The generated propositions are passed through a grading system that evaluates accuracy, clarity, completeness, and conciseness.
-
-#### Additional Resources 📚
-   - **[The Propositions Method: Enhancing Information Retrieval for AI Systems](https://open.substack.com/pub/diamantai/p/the-propositions-method-enhancing?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of proposition chunking in RAG systems.
-
-### 🔍 Query Enhancement
-
-6. Query Transformations 🔄  
-   - **[LangChain](all_rag_techniques/query_transformations.ipynb)**  
-   - **[Runnable Script](all_rag_techniques_runnable_scripts/query_transformations.py)**
-
-   #### Overview 🔎
-   Modifying and expanding queries to improve retrieval effectiveness.
-
-   #### Implementation 🛠️
-   - ✍️ **Query Rewriting:** Reformulate queries to improve retrieval.
-   - 🔙 **Step-back Prompting:** Generate broader queries for better context retrieval.
-   - 🧩 **Sub-query Decomposition:** Break complex queries into simpler sub-queries.
-
-7. Hypothetical Questions (HyDE Approach) ❓  
-   - **[LangChain](all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb)**  
-   - **[Runnable Script](all_rag_techniques_runnable_scripts/HyDe_Hypothetical_Document_Embedding.py)**
-
-   #### Overview 🔎
-   Generating hypothetical questions to improve alignment between queries and data.
-
-   #### Implementation 🛠️
-   Create hypothetical questions that point to relevant locations in the data, enhancing query-data matching.
-
-   #### Additional Resources 📚
-   - **[HyDE: Exploring Hypothetical Document Embeddings for AI Retrieval](https://open.substack.com/pub/diamantai/p/hyde-exploring-hypothetical-document?r=336pe4&utm_campaign=post&utm_medium=web)** - A short blog post explaining this method clearly.
-
-### 📚 Context and Content Enrichment
-
-8. **[Contextual Chunk Headers :label:](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb)**
-
-    #### Overview 🔎
-    Contextual chunk headers (CCH) is a method of creating document-level and section-level context, and prepending those chunk headers to the chunks prior to embedding them.
-
-    #### Implementation 🛠️
-    Create a chunk header that includes context about the document and/or section of the document, and prepend that to each chunk in order to improve the retrieval accuracy.
-
-    #### Additional Resources 📚
-    **[dsRAG](https://github.com/D-Star-AI/dsRAG)**: open-source retrieval engine that implements this technique (and a few other advanced RAG techniques)
-
-9. **[Relevant Segment Extraction 🧩](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb)**
-
-    #### Overview 🔎
-    Relevant segment extraction (RSE) is a method of dynamically constructing multi-chunk segments of text that are relevant to a given query.
-
-    #### Implementation 🛠️
-    Perform a retrieval post-processing step that analyzes the most relevant chunks and identifies longer multi-chunk segments to provide more complete context to the LLM.
-
-10. Context Enrichment Techniques 📝  
-   - **[LangChain](all_rag_techniques/context_enrichment_window_around_chunk.ipynb)**  
-   - **[LlamaIndex](all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb)**
-   - **[Runnable Script](all_rag_techniques_runnable_scripts/context_enrichment_window_around_chunk.py)**
-  
-   #### Overview 🔎
-   Enhancing retrieval accuracy by embedding individual sentences and extending context to neighboring sentences.
-
-   #### Implementation 🛠️
-   Retrieve the most relevant sentence while also accessing the sentences before and after it in the original text.
-
-11. Semantic Chunking 🧠
-   - **[LangChain](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb)**
-   - **[Runnable Script](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/semantic_chunking.py)**
-
-   #### Overview 🔎
-   Dividing documents based on semantic coherence rather than fixed sizes.
-
-   #### Implementation 🛠️
-   Use NLP techniques to identify topic boundaries or coherent sections within documents for more meaningful retrieval units.
-
-   #### Additional Resources 📚
-   - **[Semantic Chunking: Improving AI Information Retrieval](https://open.substack.com/pub/diamantai/p/semantic-chunking-improving-ai-information?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the benefits and implementation of semantic chunking in RAG systems.
-
-12. Contextual Compression 🗜️  
-   - **[LangChain](all_rag_techniques/contextual_compression.ipynb)**  
-   - **[Runnable Script](all_rag_techniques_runnable_scripts/contextual_compression.py)**
-
-   #### Overview 🔎
-   Compressing retrieved information while preserving query-relevant content.
-
-   #### Implementation 🛠️
-   Use an LLM to compress or summarize retrieved chunks, preserving key information relevant to the query.
-
-13. Document Augmentation through Question Generation for Enhanced Retrieval  
-   - **[LangChain](all_rag_techniques/document_augmentation.ipynb)**  
-   - **[Runnable Script](all_rag_techniques_runnable_scripts/document_augmentation.py)**
-
-   #### Overview 🔎
-   This implementation demonstrates a text augmentation technique that leverages additional question generation to improve document retrieval within a vector database. By generating and incorporating various questions related to each text fragment, the system enhances the standard retrieval process, thus increasing the likelihood of finding relevant documents that can be utilized as context for generative question answering.
-
-   #### Implementation 🛠️
-   Use an LLM to augment text dataset with all possible questions that can be asked to each document.
-
-### 🚀 Advanced Retrieval Methods
-
-14. Fusion Retrieval 🔗  
-    - **[LangChain](all_rag_techniques/fusion_retrieval.ipynb)**  
-    - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb)**
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/fusion_retrieval.py)**
- 
-    #### Overview 🔎
-    Optimizing search results by combining different retrieval methods.
-    
-    #### Implementation 🛠️
-    Combine keyword-based search with vector-based search for more comprehensive and accurate retrieval.
-
-15. Intelligent Reranking 📈  
-    - **[LangChain](all_rag_techniques/reranking.ipynb)**  
-    - **[LlamaIndex](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb)**
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/reranking.py)**
-
-    #### Overview 🔎
-    Applying advanced scoring mechanisms to improve the relevance ranking of retrieved results.
-    
-    #### Implementation 🛠️
-    - 🧠 **LLM-based Scoring:** Use a language model to score the relevance of each retrieved chunk.
-    - 🔀 **Cross-Encoder Models:** Re-encode both the query and retrieved documents jointly for similarity scoring.
-    - 🏆 **Metadata-enhanced Ranking:** Incorporate metadata into the scoring process for more nuanced ranking.
-
-    #### Additional Resources 📚
-    - **[Relevance Revolution: How Re-ranking Transforms RAG Systems](https://open.substack.com/pub/diamantai/p/relevance-revolution-how-re-ranking?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of re-ranking in enhancing RAG system performance.
-
-16. Multi-faceted Filtering 🔍
-
-    #### Overview 🔎
-    Applying various filtering techniques to refine and improve the quality of retrieved results.
-
-    #### Implementation 🛠️
-    - 🏷️ **Metadata Filtering:** Apply filters based on attributes like date, source, author, or document type.
-    - 📊 **Similarity Thresholds:** Set thresholds for relevance scores to keep only the most pertinent results.
-    - 📄 **Content Filtering:** Remove results that don't match specific content criteria or essential keywords.
-    - 🌈 **Diversity Filtering:** Ensure result diversity by filtering out near-duplicate entries.
-
-17. Hierarchical Indices 🗂️  
-    - **[LangChain](all_rag_techniques/hierarchical_indices.ipynb)**  
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/hierarchical_indices.py)**
-
-    #### Overview 🔎
-    Creating a multi-tiered system for efficient information navigation and retrieval.
-    
-    #### Implementation 🛠️
-    Implement a two-tiered system for document summaries and detailed chunks, both containing metadata pointing to the same location in the data.
-    
-    #### Additional Resources 📚
-    - **[Hierarchical Indices: Enhancing RAG Systems](https://open.substack.com/pub/diamantai/p/hierarchical-indices-enhancing-rag?r=336pe4&utm_campaign=post&utm_medium=web)** - A comprehensive blog post exploring the power of hierarchical indices in enhancing RAG system performance.
-
-18. Ensemble Retrieval 🎭
-
-    #### Overview 🔎
-    Combining multiple retrieval models or techniques for more robust and accurate results.
-
-    #### Implementation 🛠️
-    Apply different embedding models or retrieval algorithms and use voting or weighting mechanisms to determine the final set of retrieved documents.
-
-19. Multi-modal Retrieval 📽️
-
-    #### Overview 🔎
-    Extending RAG capabilities to handle diverse data types for richer responses.
-
-    #### Implementation 🛠️
-    - **[Multi-model RAG with Multimedia Captioning](all_rag_techniques/multi_model_rag_with_captioning.ipynb)** - Caption and store all the other multimedia data like pdfs, ppts, etc., with text data in vector store and retrieve them together.
-    - **[Multi-model RAG with Colpali](all_rag_techniques/multi_model_rag_with_colpali.ipynb)** - Instead of captioning convert all the data into image, then find the most relevant images and pass them to a vision large language model.
-    
-
-### 🔁 Iterative and Adaptive Techniques
-
-20. Retrieval with Feedback Loops 🔁  
-    - **[LangChain](all_rag_techniques/retrieval_with_feedback_loop.ipynb)**  
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/retrieval_with_feedback_loop.py)**
-
-    #### Overview 🔎
-    Implementing mechanisms to learn from user interactions and improve future retrievals.
-
-    #### Implementation 🛠️
-    Collect and utilize user feedback on the relevance and quality of retrieved documents and generated responses to fine-tune retrieval and ranking models.
-
-21. Adaptive Retrieval 🎯  
-    - **[LangChain](all_rag_techniques/adaptive_retrieval.ipynb)**  
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/adaptive_retrieval.py)**
-
-    #### Overview 🔎
-    Dynamically adjusting retrieval strategies based on query types and user contexts.
-
-    #### Implementation 🛠️
-    Classify queries into different categories and use tailored retrieval strategies for each, considering user context and preferences.
-
-22. Iterative Retrieval 🔄
-
-    #### Overview 🔎
-    Performing multiple rounds of retrieval to refine and enhance result quality.
-
-    #### Implementation 🛠️
-    Use the LLM to analyze initial results and generate follow-up queries to fill in gaps or clarify information.
-
-### 📊 Evaluation
-
-23. **[DeepEval Evaluation](evaluation/evaluation_deep_eval.ipynb)** 📘
-
-    #### Overview 🔎
-    Performing evaluations Retrieval-Augmented Generation systems, by covering several metrics and creating test cases.
-
-    #### Implementation 🛠️
-    Use the `deepeval` library to conduct test cases on correctness, faithfulness and contextual relevancy of RAG systems.
-    
-
-24. **[GroUSE Evaluation](evaluation/evaluation_grouse.ipynb)** 🐦
-
-    #### Overview 🔎
-    Evaluate the final stage of Retrieval-Augmented Generation using metrics of the GroUSE framework and meta-evaluate your custom LLM judge on GroUSE unit tests.
-
-    #### Implementation 🛠️
-    Use the `grouse` package to evaluate contextually-grounded LLM generations with GPT-4 on the 6 metrics of the GroUSE framework and use unit tests to evaluate a custom Llama 3.1 405B evaluator.
-    
-
-### 🔬 Explainability and Transparency
-
-25. Explainable Retrieval 🔍  
-    - **[LangChain](all_rag_techniques/explainable_retrieval.ipynb)**  
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/explainable_retrieval.py)**
-
-    #### Overview 🔎
-    Providing transparency in the retrieval process to enhance user trust and system refinement.
-    
-    #### Implementation 🛠️
-    Explain why certain pieces of information were retrieved and how they relate to the query.
-
-### 🏗️ Advanced Architectures
-
-26. Knowledge Graph Integration (Graph RAG) 🕸️  
-    - **[LangChain](all_rag_techniques/graph_rag.ipynb)**  
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/graph_rag.py)**
-
-    #### Overview 🔎
-    Incorporating structured data from knowledge graphs to enrich context and improve retrieval.
-    
-    #### Implementation 🛠️
-    Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
-    
-27. GraphRag (Microsoft) 🎯
-    - **[GraphRag](all_rag_techniques/Microsoft_GraphRag.ipynb)**  
-
-    #### Overview 🔎
-    Microsoft GraphRAG (Open Source) is an advanced RAG system that integrates knowledge graphs to improve the performance of LLMs
-    
-    #### Implementation 🛠️
-    • Analyze an input corpus by extracting entities, relationshipsfrom text units. generates summaries of each community and its constituents from the bottom-up.
-
-28. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
-    - **[LangChain](all_rag_techniques/raptor.ipynb)**  
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/raptor.py)**
-
-    #### Overview 🔎
-    Implementing a recursive approach to process and organize retrieved information in a tree structure.
-    
-    #### Implementation 🛠️
-    Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
-
-29. Self RAG 🔁  
-    - **[LangChain](all_rag_techniques/self_rag.ipynb)**  
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py)**
-
-    #### Overview 🔎
-    A dynamic approach that combines retrieval-based and generation-based methods, adaptively deciding whether to use retrieved information and how to best utilize it in generating responses.
-    
-    #### Implementation 🛠️
-    • Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
-
-30. Corrective RAG 🔧  
-    - **[LangChain](all_rag_techniques/crag.ipynb)**  
-    - **[Runnable Script](all_rag_techniques_runnable_scripts/crag.py)**
-
-    #### Overview 🔎
-    A sophisticated RAG approach that dynamically evaluates and corrects the retrieval process, combining vector databases, web search, and language models for highly accurate and context-aware responses.
-    
-    #### Implementation 🛠️
-    • Integrate Retrieval Evaluator, Knowledge Refinement, Web Search Query Rewriter, and Response Generator components to create a system that adapts its information sourcing strategy based on relevance scores and combines multiple sources when necessary.
-
-## 🌟 Special Advanced Technique 🌟
-
-31. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
-
-    #### Overview 🔎
-    An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
-
-    #### Implementation 🛠️
-    • Implement a multi-step process involving question anonymization, high-level planning, task breakdown, adaptive information retrieval and question answering, continuous re-planning, and rigorous answer verification to ensure grounded and accurate responses.
-
-
-
-## Getting Started
-
-To begin implementing these advanced RAG techniques in your projects:
-
-1. Clone this repository:
-   ```
-   git clone https://github.com/NirDiamant/RAG_Techniques.git
-   ```
-2. Navigate to the technique you're interested in:
-   ```
-   cd all_rag_techniques/technique-name
-   ```
-3. Follow the detailed implementation guide in each technique's directory.
-
-## Contributing
-
-We welcome contributions from the community! If you have a new technique or improvement to suggest:
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/AmazingFeature`
-3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
-4. Push to the branch: `git push origin feature/AmazingFeature`
-5. Open a pull request
-
-## Contributors
-
-[![Contributors](https://contrib.rocks/image?repo=NirDiamant/RAG_Techniques)](https://github.com/NirDiamant/RAG_Techniques/graphs/contributors)
-
-## License
-
-This project is licensed under a custom non-commercial license - see the [LICENSE](LICENSE) file for details.
-
----
-
-⭐️ If you find this repository helpful, please consider giving it a star!
-
-Keywords: RAG, Retrieval-Augmented Generation, NLP, AI, Machine Learning, Information Retrieval, Natural Language Processing, LLM, Embeddings, Semantic Search
+<div class="Box-sc-g0xbh4-0 QkQOb js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="http://makeapullrequest.com" rel="nofollow"><img src="https://camo.githubusercontent.com/88482ebfc5e3e4f2d667148ab6a3eb55948789f1dba71dfa0eb2e05afe02958c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d627269676874677265656e2e7376673f7374796c653d666c61742d737175617265" alt="欢迎 PR" data-canonical-src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" style="max-width: 100%;" _mstalt="151060" _msthash="247"></a>
+<a href="https://www.linkedin.com/in/nir-diamant-759323134/" rel="nofollow"><img src="https://camo.githubusercontent.com/7f4fa09b1856697217ac8392123d9ab7b47e4d8f8b96d82fb5ba375f7b5f0406/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c696e6b6564496e2d436f6e6e6563742d626c7565" alt="LinkedIn" data-canonical-src="https://img.shields.io/badge/LinkedIn-Connect-blue" style="max-width: 100%;" _mstalt="107016" _msthash="248"></a>
+<a href="https://twitter.com/NirDiamantAI" rel="nofollow"><img src="https://camo.githubusercontent.com/77144d97330c42418af5c6a0db3e37f7776815dc76ce06c4dc436b5c7ee5c00c/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f4e69724469616d616e7441493f6c6162656c3d466f6c6c6f77253230404e69724469616d616e744149267374796c653d736f6369616c" alt="唽" data-canonical-src="https://img.shields.io/twitter/follow/NirDiamantAI?label=Follow%20@NirDiamantAI&amp;style=social" style="max-width: 100%;" _mstalt="98995" _msthash="249"></a>
+<a href="https://discord.gg/cA6Aa4uyDX" rel="nofollow"><img src="https://camo.githubusercontent.com/9e829a68987b31f1ac8844d03ba67f279dbced2cc7f46d5ec42a35f7b5d5ec93/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d4a6f696e2532306f7572253230636f6d6d756e6974792d3732383964613f7374796c653d666c61742d737175617265266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465" alt="不和" data-canonical-src="https://img.shields.io/badge/Discord-Join%20our%20community-7289da?style=flat-square&amp;logo=discord&amp;logoColor=white" style="max-width: 100%;" _mstalt="93990" _msthash="250"></a></p>
+<blockquote>
+<p dir="auto" _msttexthash="461692296" _msthash="251">🌟 <strong _istranslated="1">支持此项目：</strong>您的赞助推动了 RAG 技术的创新。<strong _istranslated="1"><a href="https://github.com/sponsors/NirDiamant" _istranslated="1">成为赞助商</a></strong>，帮助维护和扩展这一宝贵资源！</p>
+</blockquote>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="155731095" _msthash="252">高级 RAG 技术：提升您的检索增强生成系统 🚀</h1><a id="user-content-advanced-rag-techniques-elevating-your-retrieval-augmented-generation-systems-" class="anchor" aria-label="永久链接：高级 RAG 技术：提升您的检索增强生成系统 🚀" href="#advanced-rag-techniques-elevating-your-retrieval-augmented-generation-systems-" _mstaria-label="134301063" _msthash="253"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="920938876" _msthash="254">欢迎来到当今可用的最全面、最动态的检索增强生成 （RAG） 教程集合之一。该存储库是旨在提高 RAG 系统的准确性、效率和上下文丰富性的尖端技术中心。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="35468511" _msthash="255">📫 保持更新！</h2><a id="user-content--stay-updated" class="anchor" aria-label="永久链接：📫保持更新！" href="#-stay-updated" _mstaria-label="25979915" _msthash="256"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="111196930" _msthash="257">不要错过前沿开发、新教程和社区见解！</p>
+<p dir="auto"><strong><a href="https://diamantai.substack.com/?r=336pe4&amp;utm_campaign=pub-share-checklist" rel="nofollow" _msttexthash="66968252" _msthash="258">订阅 DiamantAI 的 RAG Techniques 时事通讯</a></strong></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5211505" _msthash="259">介绍</h2><a id="user-content-introduction" class="anchor" aria-label="永久链接： 简介" href="#introduction" _mstaria-label="523835" _msthash="260"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="1554248228" _msthash="261">检索增强生成 （RAG） 正在彻底改变我们将信息检索与生成式 AI 相结合的方式。此存储库展示了一系列精心策划的高级技术，旨在增强您的 RAG 系统，使它们能够提供更准确、上下文相关和全面的响应。</p>
+<p dir="auto" _msttexthash="912881931" _msthash="262">我们的目标是为希望突破 RAG 可能性界限的研究人员和从业者提供宝贵的资源。通过营造协作环境，我们的目标是加速这一激动人心的领域的创新。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="13464841" _msthash="263">相关项目</h2><a id="user-content-related-projects" class="anchor" aria-label="永久链接： 相关项目" href="#related-projects" _mstaria-label="633217" _msthash="264"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="675812007" _msthash="265">🖋️ 查看我的<strong _istranslated="1"><a href="https://github.com/NirDiamant/Prompt_Engineering" _istranslated="1">提示工程技术指南</a></strong>，了解从基本概念到高级技术的全面提示策略集合，增强您与 AI 语言模型有效交互的能力。</p>
+<p dir="auto" _msttexthash="589770298" _msthash="266">🤖 探索我的 <strong _istranslated="1"><a href="https://github.com/NirDiamant/GenAI_Agents" _istranslated="1">GenAI 代理存储库</a></strong>，发现各种 AI 代理实现和教程，展示如何结合不同的 AI 技术来创建强大的交互式系统。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="36013588" _msthash="267">社区驱动的知识中心</h2><a id="user-content-a-community-driven-knowledge-hub" class="anchor" aria-label="永久链接：社区驱动的知识中心" href="#a-community-driven-knowledge-hub" _mstaria-label="1324700" _msthash="268"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="579759336" _msthash="269"><strong _istranslated="1">此存储库会随着您的贡献而变得更强大！</strong>加入我们充满活力的 Discord 社区 — 共同🤝塑造和推进此项目的中心枢纽</p>
+<p dir="auto"><strong><a href="https://discord.gg/cA6Aa4uyDX" rel="nofollow" _msttexthash="19086847" _msthash="270">RAG Techniques Discord 社区</a></strong></p>
+<p dir="auto" _msttexthash="1356655313" _msthash="271">无论您是专家还是新手，您的见解都可以塑造 RAG 的未来。加入我们，提出想法、获得反馈并就创新技术进行合作。有关贡献指南，请参阅我们的 <strong _istranslated="1"><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/CONTRIBUTING.md" _istranslated="1">CONTRIBUTING.md</a></strong> 文件。让我们一起推进 RAG 技术！</p>
+<p dir="auto" _msttexthash="394978779" _msthash="272">🔗 有关 GenAI、RAG 或自定义代理的讨论，或探索知识共享机会，请随时<strong _istranslated="1"><a href="https://www.linkedin.com/in/nir-diamant-759323134/" rel="nofollow" _istranslated="1">在 LinkedIn 上联系</a></strong>。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="12663456" _msthash="273">主要特点</h2><a id="user-content-key-features" class="anchor" aria-label="永久链接：主要功能" href="#key-features" _mstaria-label="473057" _msthash="274"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="49985455" _msthash="275">🧠 最先进的 RAG 增强功能</li>
+<li _msttexthash="53715961" _msthash="276">📚 每种技术的全面文档</li>
+<li _msttexthash="42753386" _msthash="277">🛠️ 实用实施指南</li>
+<li _msttexthash="46274969" _msthash="278">🌟 定期更新最新进展</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="13363454" _msthash="279">高级技术</h2><a id="user-content-advanced-techniques" class="anchor" aria-label="永久链接：高级技术" href="#advanced-techniques" _mstaria-label="763412" _msthash="280"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="69335058" _msthash="281">探索广泛的尖端 RAG 技术列表：</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="27390740" _msthash="282">🌱 基础 RAG 技术</h3><a id="user-content--foundational-rag-techniques" class="anchor" aria-label="永久链接：🌱基础 RAG 技术" href="#-foundational-rag-techniques" _mstaria-label="26769145" _msthash="283"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol dir="auto">
+<li>
+<p dir="auto" _msttexthash="23415574" _msthash="284">简单 RAG 🌱</p>
+<ul dir="auto">
+<li><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag.ipynb" _msttexthash="24309506" _msthash="285">LangChain 语言链</a></strong></li>
+<li><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_rag_with_llamaindex.ipynb" _msttexthash="14054677" _msthash="286">骆驼指数</a></strong></li>
+<li><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/simple_rag.py" _msttexthash="12051039" _msthash="287">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="288">概述 🔎</h4><a id="user-content-overview-" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview-" _mstaria-label="37494379" _msthash="289"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="50845652" _msthash="290">介绍适合新手的基本 RAG 技术。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="291">实现 🛠️</h4><a id="user-content-implementation-️" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️" _mstaria-label="74547421" _msthash="292"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="126869951" _msthash="293">从基本的检索查询开始，并集成增量学习机制。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="51972024" _msthash="294">使用 CSV 文件🧩的简单 RAG</p>
+<ul dir="auto">
+<li><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag.ipynb" _msttexthash="24309506" _msthash="295">LangChain 语言链</a></strong></li>
+<li><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/simple_csv_rag_with_llamaindex.ipynb" _msttexthash="14054677" _msthash="296">骆驼指数</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="297">概述 🔎</h4><a id="user-content-overview--1" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--1" _mstaria-label="37494379" _msthash="298"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="41240654" _msthash="299">介绍 使用 CSV 文件的基本 RAG。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="300">实现 🛠️</h4><a id="user-content-implementation-️-1" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-1" _mstaria-label="74547421" _msthash="301"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="205303865" _msthash="302">它使用 CSV 文件创建基本检索，并与 openai 集成以创建问答系统。</p>
+</li>
+<li>
+<p dir="auto"><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reliable_rag.ipynb" _msttexthash="42039075" _msthash="303">可靠的 RAG 🏷️</a></strong></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="304">概述 🔎</h4><a id="user-content-overview--2" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--2" _mstaria-label="37494379" _msthash="305"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="290790825" _msthash="306">通过添加验证和优化来增强 Simple RAG，以确保检索到的信息的准确性和相关性。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="307">实现 🛠️</h4><a id="user-content-implementation-️-2" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-2" _mstaria-label="74547421" _msthash="308"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="179101520" _msthash="309">检查检索到的文档相关性，并突出显示用于回答的文档段。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="92417117" _msthash="310">选择 Chunk Size （块大小📏）</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/choose_chunk_size.ipynb" _msttexthash="24309506" _msthash="311">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/choose_chunk_size.py" _msttexthash="12051039" _msthash="312">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="313">概述 🔎</h4><a id="user-content-overview--3" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--3" _mstaria-label="37494379" _msthash="314"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="196881971" _msthash="315">为文本块选择合适的固定大小，以平衡上下文保留和检索效率。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="316">实现 🛠️</h4><a id="user-content-implementation-️-3" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-3" _mstaria-label="74547421" _msthash="317"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="371585890" _msthash="318">尝试不同的数据块大小，以在保留上下文和保持特定使用案例的检索速度之间找到最佳平衡。</p>
+</li>
+<li>
+<p dir="auto"><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/proposition_chunking.ipynb" _msttexthash="42597295" _msthash="319">命题分块 ⛓️ 💥</a></strong></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="320">概述 🔎</h4><a id="user-content-overview--4" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--4" _mstaria-label="37494379" _msthash="321"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="445610451" _msthash="322">将文本分解成简洁、完整、有意义的句子，以便更好地控制和处理特定查询（尤其是提取知识）。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="323">实现 🛠️</h4><a id="user-content-implementation-️-4" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-4" _mstaria-label="74547421" _msthash="324"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="265134714" _msthash="325">💪 <strong _istranslated="1">命题生成：</strong>LLM 与自定义提示结合使用，以从文档块生成事实陈述。</li>
+<li _msttexthash="433454281" _msthash="326">✅ <strong _istranslated="1">质量检查：</strong>生成的建议通过评分系统进行审核，该系统评估准确性、清晰度、完整性和简洁性。</li>
+</ul>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28643329" _msthash="327">其他资源 📚</h4><a id="user-content-additional-resources-" class="anchor" aria-label="永久链接：其他资源 📚" href="#additional-resources-" _mstaria-label="53921764" _msthash="328"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="440666577" _msthash="329"><strong _istranslated="1"><a href="https://open.substack.com/pub/diamantai/p/the-propositions-method-enhancing?r=336pe4&amp;utm_campaign=post&amp;utm_medium=web" rel="nofollow" _istranslated="1">命题方法：增强 AI 系统的信息检索</a></strong> - 一篇全面的博客文章，探讨了 RAG 系统中命题分块的好处和实施。</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="35321299" _msthash="330">🔍 查询增强功能</h3><a id="user-content--query-enhancement" class="anchor" aria-label="固定链接：🔍查询增强" href="#-query-enhancement" _mstaria-label="26196846" _msthash="331"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol start="6" dir="auto">
+<li>
+<p dir="auto" _msttexthash="30490330" _msthash="332">查询转换 🔄</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/query_transformations.ipynb" _msttexthash="24309506" _msthash="333">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/query_transformations.py" _msttexthash="12051039" _msthash="334">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="335">概述 🔎</h4><a id="user-content-overview--5" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--5" _mstaria-label="37494379" _msthash="336"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="71720337" _msthash="337">修改和扩展查询以提高检索效率。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="338">实现 🛠️</h4><a id="user-content-implementation-️-5" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-5" _mstaria-label="74547421" _msthash="339"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="117762190" _msthash="340">✍️ <strong _istranslated="1">查询重写：</strong>重新构建查询以改进检索。</li>
+<li _msttexthash="285833106" _msthash="341">🔙 <strong _istranslated="1">Step-back Prompting：</strong>生成更广泛的查询以获得更好的上下文检索。</li>
+<li _msttexthash="165568403" _msthash="342">🧩 <strong _istranslated="1">子查询分解：</strong>将复杂查询分解为更简单的子查询。</li>
+</ul>
+</li>
+<li>
+<p dir="auto" _msttexthash="53891331" _msthash="343">假设问题 （HyDE 方法） ❓</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/HyDe_Hypothetical_Document_Embedding.ipynb" _msttexthash="24309506" _msthash="344">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/HyDe_Hypothetical_Document_Embedding.py" _msttexthash="12051039" _msthash="345">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="346">概述 🔎</h4><a id="user-content-overview--6" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--6" _mstaria-label="37494379" _msthash="347"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="126511684" _msthash="348">生成假设问题以提高查询和数据之间的一致性。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="349">实现 🛠️</h4><a id="user-content-implementation-️-6" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-6" _mstaria-label="74547421" _msthash="350"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="211954496" _msthash="351">创建指向数据中相关位置的假设问题，从而增强查询数据匹配。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28643329" _msthash="352">其他资源 📚</h4><a id="user-content-additional-resources--1" class="anchor" aria-label="永久链接：其他资源 📚" href="#additional-resources--1" _mstaria-label="53921764" _msthash="353"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="400230532" _msthash="354"><strong _istranslated="1"><a href="https://open.substack.com/pub/diamantai/p/hyde-exploring-hypothetical-document?r=336pe4&amp;utm_campaign=post&amp;utm_medium=web" rel="nofollow" _istranslated="1">HyDE：探索用于 AI 检索的假设文档嵌入</a></strong> - 一篇简短的博客文章，清楚地解释了这种方法。</li>
+</ul>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="39536835" _msthash="355">📚 上下文和内容丰富</h3><a id="user-content--context-and-content-enrichment" class="anchor" aria-label="永久链接：📚上下文和内容丰富" href="#-context-and-content-enrichment" _mstaria-label="26786526" _msthash="356"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol start="8" dir="auto">
+<li>
+<p dir="auto"><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_chunk_headers.ipynb" _msttexthash="49686819" _msthash="357">上下文块标头 🏷️</a></strong></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="358">概述 🔎</h4><a id="user-content-overview--7" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--7" _mstaria-label="37494379" _msthash="359"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="520050609" _msthash="360">上下文块头 （CCH） 是一种创建文档级和章节级上下文的方法，并在嵌入这些块头之前将这些块头附加到块中。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="361">实现 🛠️</h4><a id="user-content-implementation-️-7" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-7" _mstaria-label="74547421" _msthash="362"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="531576214" _msthash="363">创建一个包含有关文档和/或文档部分的上下文的 chunk 标头，并将其附加到每个 chunk 前面，以提高检索准确性。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28643329" _msthash="364">其他资源 📚</h4><a id="user-content-additional-resources--2" class="anchor" aria-label="永久链接：其他资源 📚" href="#additional-resources--2" _mstaria-label="53921764" _msthash="365"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="246862317" _msthash="366"><strong _istranslated="1"><a href="https://github.com/D-Star-AI/dsRAG" _istranslated="1">dsRAG</a></strong>：实现此技术（以及其他一些高级 RAG 技术）的开源检索引擎</p>
+</li>
+<li>
+<p dir="auto"><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/relevant_segment_extraction.ipynb" _msttexthash="37714040" _msthash="367">相关区段提取 🧩</a></strong></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="368">概述 🔎</h4><a id="user-content-overview--8" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--8" _mstaria-label="37494379" _msthash="369"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="291098067" _msthash="370">相关句段提取 （RSE） 是一种动态构建与给定查询相关的多块文本句段的方法。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="371">实现 🛠️</h4><a id="user-content-implementation-️-8" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-8" _mstaria-label="74547421" _msthash="372"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="444839499" _msthash="373">执行检索后处理步骤，分析最相关的数据块并识别较长的多数据块段，以便为 LLM 提供更完整的上下文。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="42685266" _msthash="374">上下文扩充技术 📝</p>
+</li>
+</ol>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb" _msttexthash="24309506" _msthash="375">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk_with_llamaindex.ipynb" _msttexthash="14054677" _msthash="376">骆驼指数</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/context_enrichment_window_around_chunk.py" _msttexthash="12051039" _msthash="377">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="378">概述 🔎</h4><a id="user-content-overview--9" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--9" _mstaria-label="37494379" _msthash="379"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="201747988" _msthash="380">通过嵌入单个句子并将上下文扩展到相邻句子来提高检索准确性。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="381">实现 🛠️</h4><a id="user-content-implementation-️-9" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-9" _mstaria-label="74547421" _msthash="382"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="184890472" _msthash="383">检索最相关的句子，同时访问原始文本中它之前和之后的句子。</p>
+<ol start="11" dir="auto">
+<li _msttexthash="27484405" _msthash="384">语义分块 🧠</li>
+</ol>
+<ul dir="auto">
+<li><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/semantic_chunking.ipynb" _msttexthash="24309506" _msthash="385">LangChain 语言链</a></strong></li>
+<li><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/semantic_chunking.py" _msttexthash="12051039" _msthash="386">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="387">概述 🔎</h4><a id="user-content-overview--10" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--10" _mstaria-label="37494379" _msthash="388"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="102014341" _msthash="389">根据语义一致性而不是固定大小来划分文档。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="390">实现 🛠️</h4><a id="user-content-implementation-️-10" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-10" _mstaria-label="74547421" _msthash="391"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="308443421" _msthash="392">使用 NLP 技术识别文档中的主题边界或连贯部分，以获得更有意义的检索单元。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28643329" _msthash="393">其他资源 📚</h4><a id="user-content-additional-resources--3" class="anchor" aria-label="永久链接：其他资源 📚" href="#additional-resources--3" _mstaria-label="53921764" _msthash="394"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="386997728" _msthash="395"><strong _istranslated="1"><a href="https://open.substack.com/pub/diamantai/p/semantic-chunking-improving-ai-information?r=336pe4&amp;utm_campaign=post&amp;utm_medium=web" rel="nofollow" _istranslated="1">语义分块：改进 AI 信息检索</a></strong> - 一篇全面的博客文章，探讨了 RAG 系统中语义分块的好处和实现。</li>
+</ul>
+<ol start="12" dir="auto">
+<li _msttexthash="44443464" _msthash="396">上下文压缩 🗜️</li>
+</ol>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/contextual_compression.ipynb" _msttexthash="24309506" _msthash="397">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/contextual_compression.py" _msttexthash="12051039" _msthash="398">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="399">概述 🔎</h4><a id="user-content-overview--11" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--11" _mstaria-label="37494379" _msthash="400"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="131443793" _msthash="401">压缩检索到的信息，同时保留与查询相关的内容。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="402">实现 🛠️</h4><a id="user-content-implementation-️-11" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-11" _mstaria-label="74547421" _msthash="403"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="204107839" _msthash="404">使用 LLM 压缩或汇总检索到的块，保留与查询相关的关键信息。</p>
+<ol start="13" dir="auto">
+<li _msttexthash="111150806" _msthash="405">通过问题生成进行文档扩充，以增强检索</li>
+</ol>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/document_augmentation.ipynb" _msttexthash="24309506" _msthash="406">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/document_augmentation.py" _msttexthash="12051039" _msthash="407">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="408">概述 🔎</h4><a id="user-content-overview--12" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--12" _mstaria-label="37494379" _msthash="409"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="2266642781" _msthash="410">此实现演示了一种文本增强技术，该技术利用额外的问题生成来改进矢量数据库中的文档检索。通过生成和合并与每个文本片段相关的各种问题，该系统增强了标准检索过程，从而提高了找到可用作生成式问答上下文的相关文档的可能性。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="411">实现 🛠️</h4><a id="user-content-implementation-️-12" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-12" _mstaria-label="74547421" _msthash="412"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="299308724" _msthash="413">使用 LLM 来扩充文本数据集，其中包含可以针对每个文档提出的所有可能问题。</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="38117820" _msthash="414">🚀 高级检索方法</h3><a id="user-content--advanced-retrieval-methods" class="anchor" aria-label="永久链接：🚀高级检索方法" href="#-advanced-retrieval-methods" _mstaria-label="26690820" _msthash="415"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol start="14" dir="auto">
+<li>
+<p dir="auto" _msttexthash="29442426" _msthash="416">融合检索 🔗</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb" _msttexthash="24309506" _msthash="417">LangChain 语言链</a></strong></li>
+<li><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval_with_llamaindex.ipynb" _msttexthash="14054677" _msthash="418">骆驼指数</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/fusion_retrieval.py" _msttexthash="12051039" _msthash="419">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="420">概述 🔎</h4><a id="user-content-overview--13" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--13" _mstaria-label="37494379" _msthash="421"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="94271554" _msthash="422">通过组合不同的检索方法优化搜索结果。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="423">实现 🛠️</h4><a id="user-content-implementation-️-13" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-13" _mstaria-label="74547421" _msthash="424"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="296492586" _msthash="425">将基于关键字的搜索与基于向量的搜索相结合，以实现更全面、更准确的检索。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="40216358" _msthash="426">智能重新排名 📈</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb" _msttexthash="24309506" _msthash="427">LangChain 语言链</a></strong></li>
+<li><strong><a href="https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking_with_llamaindex.ipynb" _msttexthash="14054677" _msthash="428">骆驼指数</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/reranking.py" _msttexthash="12051039" _msthash="429">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="430">概述 🔎</h4><a id="user-content-overview--14" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--14" _mstaria-label="37494379" _msthash="431"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="132901067" _msthash="432">应用高级评分机制来提高检索结果的相关性排名。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="433">实现 🛠️</h4><a id="user-content-implementation-️-14" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-14" _mstaria-label="74547421" _msthash="434"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="280888933" _msthash="435">🧠 <strong _istranslated="1">基于 LLM 的评分：</strong>使用语言模型对每个检索到的块的相关性进行评分。</li>
+<li _msttexthash="328440684" _msthash="436">🔀 <strong _istranslated="1">跨编码器模型：</strong>对查询和检索到的文档一起重新编码，以进行相似性评分。</li>
+<li _msttexthash="274896375" _msthash="437">🏆 <strong _istranslated="1">元数据增强的排名：</strong>将元数据纳入评分过程，以获得更细致的排名。</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28643329" _msthash="438">其他资源 📚</h4><a id="user-content-additional-resources--4" class="anchor" aria-label="永久链接：其他资源 📚" href="#additional-resources--4" _mstaria-label="53921764" _msthash="439"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="572024271" _msthash="440"><strong _istranslated="1"><a href="https://open.substack.com/pub/diamantai/p/relevance-revolution-how-re-ranking?r=336pe4&amp;utm_campaign=post&amp;utm_medium=web" rel="nofollow" _istranslated="1">相关性革命：重新排名如何改变 RAG 系统</a></strong> - 一篇全面的博客文章，探讨了重新排名在提高 RAG 系统性能方面的力量。</li>
+</ul>
+</li>
+<li>
+<p dir="auto" _msttexthash="31338294" _msthash="441">多面筛选 🔍</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="442">概述 🔎</h4><a id="user-content-overview--15" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--15" _mstaria-label="37494379" _msthash="443"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="141101012" _msthash="444">应用各种筛选技术来优化和提高检索结果的质量。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="445">实现 🛠️</h4><a id="user-content-implementation-️-15" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-15" _mstaria-label="74547421" _msthash="446"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="284543571" _msthash="447">🏷️ <strong _istranslated="1">元数据筛选：</strong>根据日期、来源、作者或文档类型等属性应用筛选条件。</li>
+<li _msttexthash="242863725" _msthash="448">📊 <strong _istranslated="1">相似性阈值：</strong>设置相关性分数的阈值，以仅保留最相关的结果。</li>
+<li _msttexthash="215888829" _msthash="449">📄 <strong _istranslated="1">内容过滤：</strong>删除与特定内容标准或基本关键字不匹配的结果。</li>
+<li _msttexthash="238809870" _msthash="450">🌈 <strong _istranslated="1">多样性筛选：</strong>通过筛选出几乎重复的条目来确保结果的多样性。</li>
+</ul>
+</li>
+<li>
+<p dir="auto" _msttexthash="39043160" _msthash="451">分层索引 🗂️</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/hierarchical_indices.ipynb" _msttexthash="24309506" _msthash="452">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/hierarchical_indices.py" _msttexthash="12051039" _msthash="453">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="454">概述 🔎</h4><a id="user-content-overview--16" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--16" _mstaria-label="37494379" _msthash="455"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="111185750" _msthash="456">创建多层系统以实现高效的信息导航和检索。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="457">实现 🛠️</h4><a id="user-content-implementation-️-16" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-16" _mstaria-label="74547421" _msthash="458"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="286699179" _msthash="459">为文档摘要和详细块实施两层系统，两者都包含指向数据中相同位置的元数据。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28643329" _msthash="460">其他资源 📚</h4><a id="user-content-additional-resources--5" class="anchor" aria-label="永久链接：其他资源 📚" href="#additional-resources--5" _mstaria-label="53921764" _msthash="461"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="430437228" _msthash="462"><strong _istranslated="1"><a href="https://open.substack.com/pub/diamantai/p/hierarchical-indices-enhancing-rag?r=336pe4&amp;utm_campaign=post&amp;utm_medium=web" rel="nofollow" _istranslated="1">分层指数：增强 RAG 系统</a></strong> - 一篇全面的博客文章，探讨了分层指数在增强 RAG 系统性能方面的力量。</li>
+</ul>
+</li>
+<li>
+<p dir="auto" _msttexthash="30273750" _msthash="463">集成检索 🎭</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="464">概述 🔎</h4><a id="user-content-overview--17" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--17" _mstaria-label="37494379" _msthash="465"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="154534198" _msthash="466">结合多个检索模型或技术以获得更稳健、更准确的结果。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="467">实现 🛠️</h4><a id="user-content-implementation-️-17" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-17" _mstaria-label="74547421" _msthash="468"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="343418244" _msthash="469">应用不同的嵌入模型或检索算法，并使用投票或加权机制来确定检索到的最终文档集。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="45877364" _msthash="470">多模态检索 📽️</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="471">概述 🔎</h4><a id="user-content-overview--18" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--18" _mstaria-label="37494379" _msthash="472"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="187985785" _msthash="473">扩展 RAG 功能以处理各种数据类型，从而获得更丰富的响应。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="474">实现 🛠️</h4><a id="user-content-implementation-️-18" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-18" _mstaria-label="74547421" _msthash="475"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="746894486" _msthash="476"><strong _istranslated="1"><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_captioning.ipynb" _istranslated="1">具有多媒体字幕的多模型 RAG</a></strong> - 将所有其他多媒体数据（如 pdf、ppts 等）与文本数据一起字幕并存储在矢量存储中，并一起检索它们。</li>
+<li _msttexthash="701224446" _msthash="477"><strong _istranslated="1"><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/multi_model_rag_with_colpali.ipynb" _istranslated="1">使用 Colpali 的多模型 RAG</a></strong> - 而不是标题，将所有数据转换为图像，然后找到最相关的图像并将其传递给视觉大型语言模型。</li>
+</ul>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="47189428" _msthash="478">🔁 迭代和自适应技术</h3><a id="user-content--iterative-and-adaptive-techniques" class="anchor" aria-label="永久链接：🔁迭代和自适应技术" href="#-iterative-and-adaptive-techniques" _mstaria-label="26981656" _msthash="479"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol start="20" dir="auto">
+<li>
+<p dir="auto" _msttexthash="52257179" _msthash="480">使用反馈循环🔁检索</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/retrieval_with_feedback_loop.ipynb" _msttexthash="24309506" _msthash="481">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/retrieval_with_feedback_loop.py" _msttexthash="12051039" _msthash="482">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="483">概述 🔎</h4><a id="user-content-overview--19" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--19" _mstaria-label="37494379" _msthash="484"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="124004881" _msthash="485">实施机制以从用户交互中学习并改进未来的检索。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="486">实现 🛠️</h4><a id="user-content-implementation-️-19" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-19" _mstaria-label="74547421" _msthash="487"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="459172038" _msthash="488">收集并利用用户对检索到的文档的相关性和质量的反馈，以及生成的响应，以微调检索和排名模型。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="35132734" _msthash="489">适应性检索 🎯</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/adaptive_retrieval.ipynb" _msttexthash="24309506" _msthash="490">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/adaptive_retrieval.py" _msttexthash="12051039" _msthash="491">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="492">概述 🔎</h4><a id="user-content-overview--20" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--20" _mstaria-label="37494379" _msthash="493"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="121142892" _msthash="494">根据查询类型和用户上下文动态调整检索策略。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="495">实现 🛠️</h4><a id="user-content-implementation-️-20" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-20" _mstaria-label="74547421" _msthash="496"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="386875632" _msthash="497">将查询分类为不同的类别，并为每个类别使用定制的检索策略，同时考虑用户上下文和偏好。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="29497598" _msthash="498">迭代检索 🔄</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="499">概述 🔎</h4><a id="user-content-overview--21" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--21" _mstaria-label="37494379" _msthash="500"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="91996983" _msthash="501">执行多轮检索以优化和提高结果质量。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="502">实现 🛠️</h4><a id="user-content-implementation-️-21" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-21" _mstaria-label="74547421" _msthash="503"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="195173927" _msthash="504">使用 LLM 分析初始结果并生成后续查询以填补空白或澄清信息。</p>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="17737395" _msthash="505">📊 评估</h3><a id="user-content--evaluation" class="anchor" aria-label="永久链接： 📊 评估" href="#-evaluation" _mstaria-label="25929280" _msthash="506"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol start="23" dir="auto">
+<li>
+<p dir="auto" _msttexthash="36764390" _msthash="507"><strong _istranslated="1"><a href="/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_deep_eval.ipynb" _istranslated="1">DeepEval 评估</a></strong> 📘</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="508">概述 🔎</h4><a id="user-content-overview--22" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--22" _mstaria-label="37494379" _msthash="509"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="175324734" _msthash="510">通过涵盖多个指标和创建测试用例来执行评估 Retrieval-Augmented Generation 系统。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="511">实现 🛠️</h4><a id="user-content-implementation-️-22" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-22" _mstaria-label="74547421" _msthash="512"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font _mstmutation="1" _msttexthash="205295519" _msthash="513">使用该库对 RAG 系统的正确性、忠实度和上下文相关性进行测试。</font><code>deepeval</code></p>
+</li>
+<li>
+<p dir="auto" _msttexthash="32318390" _msthash="514"><strong _istranslated="1"><a href="/NirDiamant/RAG_Techniques/blob/main/evaluation/evaluation_grouse.ipynb" _istranslated="1">GroUSE 评估</a></strong> 🐦</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="515">概述 🔎</h4><a id="user-content-overview--23" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--23" _mstaria-label="37494379" _msthash="516"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="538830786" _msthash="517">使用 GroUSE 框架的指标评估检索增强生成的最后阶段，并在 GroUSE 单元测试中对您的自定义 LLM 判断进行元评估。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="518">实现 🛠️</h4><a id="user-content-implementation-️-23" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-23" _mstaria-label="74547421" _msthash="519"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font _mstmutation="1" _msttexthash="578421727" _msthash="520">使用该软件包根据 GroUSE 框架的 6 个指标使用 GPT-4 评估基于上下文的 LLM 生成，并使用单元测试评估自定义 Llama 3.1 405B 评估器。</font><code>grouse</code></p>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="47710026" _msthash="521">🔬 可解释性和透明度</h3><a id="user-content--explainability-and-transparency" class="anchor" aria-label="永久链接：🔬可解释性和透明度" href="#-explainability-and-transparency" _mstaria-label="26946062" _msthash="522"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol start="25" dir="auto">
+<li>
+<p dir="auto" _msttexthash="36259262" _msthash="523">可解释检索 🔍</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/explainable_retrieval.ipynb" _msttexthash="24309506" _msthash="524">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/explainable_retrieval.py" _msttexthash="12051039" _msthash="525">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="526">概述 🔎</h4><a id="user-content-overview--24" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--24" _mstaria-label="37494379" _msthash="527"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="160066842" _msthash="528">在检索过程中提供透明度，以增强用户信任和系统优化。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="529">实现 🛠️</h4><a id="user-content-implementation-️-24" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-24" _mstaria-label="74547421" _msthash="530"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="122534789" _msthash="531">说明检索某些信息的原因以及它们与查询的关系。</p>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="37016460" _msthash="532">🏗️ 高级架构</h3><a id="user-content-️-advanced-architectures" class="anchor" aria-label="永久链接： 🏗️ 高级架构" href="#️-advanced-architectures" _mstaria-label="42704779" _msthash="533"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol start="26" dir="auto">
+<li>
+<p dir="auto" _msttexthash="108467138" _msthash="534">知识图谱集成 （Graph RAG） 🕸️</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/graph_rag.ipynb" _msttexthash="24309506" _msthash="535">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/graph_rag.py" _msttexthash="12051039" _msthash="536">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="537">概述 🔎</h4><a id="user-content-overview--25" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--25" _mstaria-label="37494379" _msthash="538"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="176474818" _msthash="539">整合知识图谱中的结构化数据，以丰富上下文并改进检索。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="540">实现 🛠️</h4><a id="user-content-implementation-️-25" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-25" _mstaria-label="74547421" _msthash="541"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="538481840" _msthash="542">从与查询相关的知识图谱中检索实体及其关系，将此结构化数据与非结构化文本相结合，以获得更多信息响应。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="73115991" _msthash="543">GraphRag （Microsoft） 🎯</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/Microsoft_GraphRag.ipynb" _msttexthash="7778654" _msthash="544">图拉格</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="545">概述 🔎</h4><a id="user-content-overview--26" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--26" _mstaria-label="37494379" _msthash="546"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="422237998" _msthash="547">Microsoft GraphRAG（开源）是一个高级 RAG 系统，它集成了知识图谱以提高 LLM 的性能</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="548">实现 🛠️</h4><a id="user-content-implementation-️-26" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-26" _mstaria-label="74547421" _msthash="549"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="386663212" _msthash="550">• 通过从文本单元中提取实体、关系来分析输入语料库。自下而上生成每个社区及其成员的摘要。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="156348816" _msthash="551">RAPTOR：用于树组织检索🌳的递归抽象处理</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/raptor.ipynb" _msttexthash="24309506" _msthash="552">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/raptor.py" _msttexthash="12051039" _msthash="553">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="554">概述 🔎</h4><a id="user-content-overview--27" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--27" _mstaria-label="37494379" _msthash="555"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="164954400" _msthash="556">实施递归方法，以树结构形式处理和组织检索到的信息。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="557">实现 🛠️</h4><a id="user-content-implementation-️-27" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-27" _mstaria-label="74547421" _msthash="558"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="356103878" _msthash="559">使用抽象摘要递归处理和汇总检索到的文档，将信息组织成树状结构以进行分层上下文。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="23862800" _msthash="560">自我 RAG 🔁</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/self_rag.ipynb" _msttexthash="24309506" _msthash="561">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/self_rag.py" _msttexthash="12051039" _msthash="562">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="563">概述 🔎</h4><a id="user-content-overview--28" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--28" _mstaria-label="37494379" _msthash="564"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="617470711" _msthash="565">一种动态方法，结合了基于检索和基于生成的方法，自适应地决定是否使用检索到的信息以及如何最好地利用它来生成响应。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="566">实现 🛠️</h4><a id="user-content-implementation-️-28" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-28" _mstaria-label="74547421" _msthash="567"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="722611487" _msthash="568">• 实施多步骤流程，包括检索决策、文档检索、相关性评估、响应生成、支持评估和实用程序评估，以生成准确、相关和有用的输出。</p>
+</li>
+<li>
+<p dir="auto" _msttexthash="23884497" _msthash="569">矫正 RAG 🔧</p>
+<ul dir="auto">
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/crag.ipynb" _msttexthash="24309506" _msthash="570">LangChain 语言链</a></strong></li>
+<li><strong><a href="/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques_runnable_scripts/crag.py" _msttexthash="12051039" _msthash="571">Runnable 脚本</a></strong></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="572">概述 🔎</h4><a id="user-content-overview--29" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--29" _mstaria-label="37494379" _msthash="573"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="736847488" _msthash="574">一种复杂的 RAG 方法，可动态评估和纠正检索过程，结合矢量数据库、Web 搜索和语言模型，以实现高度准确和上下文感知的响应。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="575">实现 🛠️</h4><a id="user-content-implementation-️-29" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-29" _mstaria-label="74547421" _msthash="576"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="1795828138" _msthash="577">• 集成 Retrieval Evaluator、Knowledge Refinement、Web Search Query Rewriter 和 Response Generator 组件，以创建一个系统，该系统根据相关性分数调整其信息来源策略，并在必要时组合多个来源。</p>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="60456071" _msthash="578">🌟 特殊高级技术 🌟</h2><a id="user-content--special-advanced-technique-" class="anchor" aria-label="永久链接：🌟特殊高级技术 🌟" href="#-special-advanced-technique-" _mstaria-label="90332151" _msthash="579"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ol start="31" dir="auto">
+<li>
+<p dir="auto"><strong><a href="https://github.com/NirDiamant/Controllable-RAG-Agent" _msttexthash="90856246" _msthash="580">用于复杂 RAG 任务🤖的复杂可控代理</a></strong></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="20123571" _msthash="581">概述 🔎</h4><a id="user-content-overview--30" class="anchor" aria-label="永久链接： 概述 🔎" href="#overview--30" _mstaria-label="37494379" _msthash="582"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="1642406909" _msthash="583">一种高级 RAG 解决方案，旨在解决简单的基于语义相似性的检索无法解决的复杂问题。这种方法使用复杂的确定性图作为高度可控的自主代理的 “大脑”🧠，能够回答你自己的数据中的重要问题。</p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto" _msttexthash="28409004" _msthash="584">实现 🛠️</h4><a id="user-content-implementation-️-30" class="anchor" aria-label="永久链接：实现 🛠️" href="#implementation-️-30" _mstaria-label="74547421" _msthash="585"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="900113682" _msthash="586">• 实施多步骤流程，包括问题匿名化、高级规划、任务分解、自适应信息检索和问答、持续重新规划以及严格的答案验证，以确保回答扎实和准确。</p>
+</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4603768" _msthash="587">开始</h2><a id="user-content-getting-started" class="anchor" aria-label="永久链接： 开始使用" href="#getting-started" _mstaria-label="591461" _msthash="588"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="119124928" _msthash="589">要开始在您的项目中实施这些高级 RAG 技术：</p>
+<ol dir="auto">
+<li><font _mstmutation="1" _msttexthash="29924115" _msthash="590">克隆此存储库：</font><div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>git clone https://github.com/NirDiamant/RAG_Techniques.git
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/NirDiamant/RAG_Techniques.git" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+<li><font _mstmutation="1" _msttexthash="54588794" _msthash="591">导航到您感兴趣的技术：</font><div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>cd all_rag_techniques/technique-name
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="cd all_rag_techniques/technique-name" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</li>
+<li _msttexthash="123625788" _msthash="592">按照每种技术目录中的详细实现指南进行操作。</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6354283" _msthash="593">贡献</h2><a id="user-content-contributing" class="anchor" aria-label="永久链接： 贡献" href="#contributing" _mstaria-label="521066" _msthash="594"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="184625220" _msthash="595">我们欢迎社区的贡献！如果您有新的技术或改进建议：</p>
+<ol dir="auto">
+<li _msttexthash="6707675" _msthash="596">Fork 仓库</li>
+<li><font _mstmutation="1" _msttexthash="29289078" _msthash="597">创建功能分支：</font><code>git checkout -b feature/AmazingFeature</code></li>
+<li><font _mstmutation="1" _msttexthash="20210060" _msthash="598">提交更改：</font><code>git commit -m 'Add some AmazingFeature'</code></li>
+<li><font _mstmutation="1" _msttexthash="25238837" _msthash="599">推送到分支：</font><code>git push origin feature/AmazingFeature</code></li>
+<li _msttexthash="20015931" _msthash="600">打开拉取请求</li>
+</ol>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6354283" _msthash="601">贡献</h2><a id="user-content-contributors" class="anchor" aria-label="永久链接： 贡献者" href="#contributors" _mstaria-label="528866" _msthash="602"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/NirDiamant/RAG_Techniques/graphs/contributors"><img src="https://camo.githubusercontent.com/858ba294638a68388246f12f5556b091c74c0b8b410a38a5bd9b76f0929d4173/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d4e69724469616d616e742f5241475f546563686e6971756573" alt="贡献" data-canonical-src="https://contrib.rocks/image?repo=NirDiamant/RAG_Techniques" style="max-width: 100%;" _mstalt="213941" _msthash="603"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="9675445" _msthash="604">许可证</h2><a id="user-content-license" class="anchor" aria-label="永久链接：许可证" href="#license" _mstaria-label="331903" _msthash="605"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="269427691" _msthash="606">此项目根据自定义非商业许可证进行许可 - 有关详细信息，请参阅 <a href="/NirDiamant/RAG_Techniques/blob/main/LICENSE" _istranslated="1">LICENSE</a> 文件。</p>
+<hr>
+<p dir="auto" _msttexthash="184838420" _msthash="607">⭐️ 如果您觉得此存储库有帮助，请考虑给它打星标！</p>
+<p dir="auto" _msttexthash="670068282" _msthash="608">关键词：RAG， 检索增强生成， NLP， 人工智能， 机器学习， 信息检索， 自然语言处理， LLM， 嵌入， 语义搜索</p>
+</article></div>
